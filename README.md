@@ -36,7 +36,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Estado
     - [x] Um componente textarea com estado
     - [x] Uma observação sobre eventos do DOM
-    - [ ] Tratamento de eventos na React
+    - [x] Tratamento de eventos na React
     - [ ] Propriedades no estado inicial: um antipadrão
     - [ ] Acessando o componente de fora
     - [ ] Alterando as propriedades durante a execução
