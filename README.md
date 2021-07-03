@@ -40,7 +40,19 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Propriedades no estado inicial: um antipadrão
     - [x] Acessando o componente de fora
     - [x] Alterando as propriedades durante a execução
-    - [ ] Métodos de ciclo de vida
+    - [x] Métodos de ciclo de vida
+      - [x] compoentWillUpdate()
+        - Executa antes do método render() de seu componente ser chamado novamente (como resultado de mudanças nas propriedades ou no estado).
+      - [x] componentDidUpdate()
+        - Executado após o método render() ter sido concluído e as novas alterações no DOM subjacente terem sido aplicadas.
+      - [x] componentWillMount()
+        - Executado antes de o nó ser inserido no DOM
+      - [x] componentDidMount()
+        - Executado depois que o nó é inserido no DOM
+      - [x] componentWillUnmount()
+        - Executado imediatamente antes de o componente ser removido do DOM.
+      - [x] shouldComponentUpdate(newProps, newState)
+        - Esse método é chamado antes de componentWillUpdate() e dá a você a oportunidade de executar um return false; e cancelar a atualização, o que significa que ser método render() não será chamado.
     - [ ] Exemplo de ciclo de vida: fazendo log de tudo
     - [ ] Exemplo de ciclo de vida: usando uma mixin
     - [ ] Exemplo de ciclo de vida: usando um componente-filho
