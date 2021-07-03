@@ -34,7 +34,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] propTypes
     - [x] Valores default das propriedades
     - [x] Estado
-    - [ ] Um componente textarea com estado
+    - [x] Um componente textarea com estado
     - [ ] Uma observação sobre eventos do DOM
     - [ ] Tratamento de eventos na React
     - [ ] Propriedades no estado inicial: um antipadrão
