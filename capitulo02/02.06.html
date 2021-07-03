@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos nos velhos tempos</title>
+</head>
+
+<body>
+    <div id="parent">
+        <button id="ok">OK</button>
+        <button id="cancel">Cancel</button>
+    </div>
+    <script>
+        document.getElementById('parent').addEventListener('click', function(event) {
+            var button = event.target;
+
+            //Executa tarefas diferentes de acordo com o botão que foi criado
+            switch (button.id) {
+                case 'ok':
+                    console.log('OK!');
+                    break;
+                case 'cancel':
+                    console.log('Cancel');
+                    break;
+                default:
+                    new Error('Unexpected button ID');
+            }
+        })
+    </script>
+</body>
+
+</html>
