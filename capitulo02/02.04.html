@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello React</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Minnha aplicação renderiza aqui-->
+    </div>
+
+    <script src="../react-0.14.7/build/react.js"></script>
+    <script src="../react-0.14.7/build/react-dom.js"></script>
+    <script>
+        var Component = React.createClass(
+            {
+                propTypes: {
+                    firstName: React.PropTypes.string.isRequired,
+                    middleName: React.PropTypes.string,
+                    familyName: React.PropTypes.string.isRequired,
+                    address: React.PropTypes.string,
+                },
+
+                getDefaultProps: function() {
+                    return {
+                        middleName: '',
+                        address: 'n/a'
+                    };
+                },
+
+                render: function () {
+                    return React.DOM.div(null, 
+                        React.DOM.p(null,
+                            "firstName: " + this.props.firstName
+                        ),
+                        React.DOM.p(null,
+                            "middleName: " + this.props.middleName
+                        ),
+                        React.DOM.p(null,
+                            "familyName: " + this.props.familyName
+                        ),
+                        React.DOM.p(null,
+                            "address: " + this.props.address
+                        )  
+                    );
+                }
+            }
+        );
+
+        ReactDOM.render(
+            React.createElement(Component, {
+                firstName: "Marcos",
+                familyName: 'Family Name'
+            }),
+            document.getElementById("app")
+        );
+
+        // console: Warning: Failed propType: Invalid prop `name` of type `number` supplied to `Constructor`, expected `string`.
+    </script>
+</body>
+
+</html>
