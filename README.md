@@ -31,7 +31,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
 - [ ] Capítulo 2 - A vida de um componente
     - [x] O mínimo necessário
     - [x] Propriedades
-    - [ ] propTypes
+    - [x] propTypes
     - [ ] Valores default das propriedades
     - [ ] Estado
     - [ ] Um componente textarea com estado
