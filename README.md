@@ -25,7 +25,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] O que aconteceu?
     - [x] React.DOM.*
     - [x] Atributos especiais do DOM
-    - [ ] Extensão de navegador React e DevTools
+    - [x] Extensão de navegador React e DevTools
     - [ ] A seguir: componentes personalizados
     
 - [ ] Capítulo 2 - A vida de um componente
