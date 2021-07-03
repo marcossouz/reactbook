@@ -38,7 +38,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Uma observação sobre eventos do DOM
     - [x] Tratamento de eventos na React
     - [x] Propriedades no estado inicial: um antipadrão
-    - [ ] Acessando o componente de fora
+    - [x] Acessando o componente de fora
     - [ ] Alterando as propriedades durante a execução
     - [ ] Métodos de ciclo de vida
     - [ ] Exemplo de ciclo de vida: fazendo log de tudo
