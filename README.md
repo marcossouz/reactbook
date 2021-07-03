@@ -24,7 +24,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Hello World com a React
     - [x] O que aconteceu?
     - [x] React.DOM.*
-    - [ ] Atributos especiais do DOM
+    - [x] Atributos especiais do DOM
     - [ ] Extensão de navegador React e DevTools
     - [ ] A seguir: componentes personalizados
     
