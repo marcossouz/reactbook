@@ -39,7 +39,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Atributos especiais do DOM
     - [x] Extensão de navegador React e DevTools
     - [x] A seguir: componentes personalizados
-- [ ] <span id="cap2">Capítulo 2</span> - A vida de um componente
+- [x] <span id="cap2">Capítulo 2</span> - A vida de um componente
     - [x] O mínimo necessário
     - [x] Propriedades
     - [x] propTypes
@@ -68,7 +68,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Exemplo de ciclo de vida: usando uma mixin
     - [x] Exemplo de ciclo de vida: usando um componente-filho
     - [x] Ganho de desempenho: evitando atualização de componentes
-    - [ ] PureRenderMixin
+    - [x] PureRenderMixin
 
 - [ ] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
     - [ ] Primeiros dados
