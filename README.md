@@ -66,8 +66,8 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
         - Esse método é chamado antes de componentWillUpdate() e dá a você a oportunidade de executar um return false; e cancelar a atualização, o que significa que ser método render() não será chamado.
     - [x] Exemplo de ciclo de vida: fazendo log de tudo
     - [x] Exemplo de ciclo de vida: usando uma mixin
-    - [ ] Exemplo de ciclo de vida: usando um componente-filho
-    - [ ] Ganho de desempenho: evitando atualização de componentes
+    - [x] Exemplo de ciclo de vida: usando um componente-filho
+    - [x] Ganho de desempenho: evitando atualização de componentes
     - [ ] PureRenderMixin
 
 - [ ] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
