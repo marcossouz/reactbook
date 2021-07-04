@@ -64,7 +64,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
         - Executado imediatamente antes de o componente ser removido do DOM.
       - [x] shouldComponentUpdate(newProps, newState)
         - Esse método é chamado antes de componentWillUpdate() e dá a você a oportunidade de executar um return false; e cancelar a atualização, o que significa que ser método render() não será chamado.
-    - [ ] Exemplo de ciclo de vida: fazendo log de tudo
+    - [x] Exemplo de ciclo de vida: fazendo log de tudo
     - [ ] Exemplo de ciclo de vida: usando uma mixin
     - [ ] Exemplo de ciclo de vida: usando um componente-filho
     - [ ] Ganho de desempenho: evitando atualização de componentes

@@ -24,7 +24,10 @@
             componentWillUpdate: function() {
                 this._log('componentWillUpdate', arguments);
             },
-            componentDidUpdate: function() {
+            componentDidUpdate: function(oldProps, oldState) {
+                if(this.state.text.length > 3) {
+                    this.replaceState(oldState);
+                }
                 this._log('componentDidUpdate', arguments);
             },
             componentWillMount: function() {
