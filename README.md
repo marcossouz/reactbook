@@ -17,9 +17,21 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
 
 </p>
 
-# Conteúdo e andamento
 
-- [x]  Capítulo 1 - Hello World
+# Tabela de conteúdo
+
+- <a href="#cap1">Capítulo 1 - Hello World</a>
+- <a href="#cap2">Capítulo 2 - A vida de um componente</a>
+- <a href="#cap3">Capítulo 3 - Excel: um componente de tabela elegante</a>
+- <a href="#cap4">Capítulo 4 - JSX</a>
+- <a href="#cap5">Capítulo 5 - Preparando-se para o desenvolvimento de aplicações</a>
+- <a href="#cap6">Capítulo 6 - Construindo uma aplicação</a>
+- <a href="#cap7">Capítulo 7 - Lint, Flow, Testar, Repetir</a>
+- <a href="#cap8">Capítulo 8 - Flux</a>
+
+# Checklist e detalhamento de conteúdo
+
+- [x] <span id="cap1">Capítulo 1</span> - Hello World
     - [x] Instalação
     - [x] Hello World com a React
     - [x] O que aconteceu?
@@ -27,8 +39,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Atributos especiais do DOM
     - [x] Extensão de navegador React e DevTools
     - [x] A seguir: componentes personalizados
-    
-- [ ] Capítulo 2 - A vida de um componente
+- [ ] <span id="cap2">Capítulo 2</span> - A vida de um componente
     - [x] O mínimo necessário
     - [x] Propriedades
     - [x] propTypes
@@ -59,7 +70,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [ ] Ganho de desempenho: evitando atualização de componentes
     - [ ] PureRenderMixin
 
-- [ ] Capítulo 3 - Excel: um componente de tabela elegante
+- [ ] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
     - [ ] Primeiros dados
     - [ ] Laço para cabeçalho da tabela
     - [ ] Depurando o aviso do controle
@@ -82,7 +93,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [ ] Uma implementação alternativa?
     - [ ] Download dos dados da tabela
 
-- [ ] Capítulo 4 - JSX
+- [ ] <span id="cap4">Capítulo 4</span> - JSX
     - [ ] Hello JSX
     - [ ] Trapiração do JSX
     - [ ] Babel
@@ -108,8 +119,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [ ] Valor de `<select>`
     - [ ] O componente Excel em JSX
 
-
-- [ ] Capítulo 5 - Preparando-se para o desenvolvimento de aplicações
+- [ ] <span od="cap5">Capítulo 5</span> - Preparando-se para o desenvolvimento de aplicações
     - [ ] Uma aplicação bolerplate
     - [ ] Arquivos e pastas
     - [ ] index.html
@@ -134,7 +144,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [ ] Implantação
     - [ ] Prosseguindo
 
-- [ ] Capítulo 6 - Construindo uma aplicação
+- [ ] <span id="cap6">Capítulo 6</span> - Construindo uma aplicação
     - [ ] Whinepad v0.0.1
         - [ ] Configuração
         - [ ] Comece a programar
@@ -157,7 +167,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [ ] Concluindo
 
 
-- [ ] Capítulo 7 - Lint, Flow, Testar, Repetir
+- [ ] <span id="cap7">Capítulo 7</span> - Lint, Flow, Testar, Repetir
     - [ ] package.json
         - [ ] Configurando o Babel
         - [ ] scripts
@@ -186,7 +196,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
         - [ ] Cobertura
 
 
-- [ ] Capítulo 8 - Flux
+- [ ] <span id="cap8">Capítulo 8</span> - Flux
     - [ ] A grande ideia
     - [ ] Analisando o Whinepad novamente
     - [ ] A Store
