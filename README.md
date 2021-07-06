@@ -72,7 +72,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
 
 - [ ] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
     - [x] Primeiros dados
-    - [ ] Laço para cabeçalho da tabela
+    - [x] Laço para cabeçalho da tabela
     - [ ] Depurando o aviso do controle
     - [ ] Adicionando o conteúdo de `<td>`
     - [ ] Como podemos melhorar o componente?
