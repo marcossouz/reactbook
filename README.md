@@ -71,7 +71,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] PureRenderMixin
 
 - [ ] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
-    - [ ] Primeiros dados
+    - [x] Primeiros dados
     - [ ] Laço para cabeçalho da tabela
     - [ ] Depurando o aviso do controle
     - [ ] Adicionando o conteúdo de `<td>`
