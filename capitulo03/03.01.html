@@ -28,7 +28,31 @@
             ["She: A History of Adventure", "H. Rider Haggard", "English", "1887", "100 million"],
         ];
 
-        
+        var Excel = React.createClass({
+            render: function () {
+                return (
+                    React.DOM.table(null,
+                        React.DOM.thead(null,
+                            React.DOM.tr(null,
+                                this.props.headers.map(function (title) {
+                                    return React.DOM.th(null, title);
+                                })
+                            )
+                        )
+                    )
+                )
+            }
+        })
+
+        ReactDOM.render(
+            React.createElement(Excel, {
+                headers: headers,
+                initialData: data,
+            }),
+            document.getElementById("app")
+        )
+
+
 
     </script>
 </body>
