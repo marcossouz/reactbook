@@ -78,7 +78,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Como podemos melhorar o componente?
     - [x] Ordenação
     - [x] Como podemos melhorar o componente?
-    - [ ] Pistas sobre ordenação UI
+    - [x] Pistas sobre ordenação UI
     - [ ] Editando dados
     - [ ] Célula em que é possível editar
     - [ ] Célula com campo de entrada
