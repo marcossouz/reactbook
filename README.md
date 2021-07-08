@@ -76,8 +76,8 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Depurando o aviso do controle
     - [x] Adicionando o conteúdo de `<td>`
     - [x] Como podemos melhorar o componente?
-    - [ ] Ordenação
-    - [ ] Como podemos melhorar o componehte?
+    - [x] Ordenação
+    - [ ] Como podemos melhorar o componente?
     - [ ] Pistas sobre ordenação UI
     - [ ] Editando dados
     - [ ] Célula em que é possível editar
