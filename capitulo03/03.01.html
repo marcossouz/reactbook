@@ -34,8 +34,8 @@
                     React.DOM.table(null,
                         React.DOM.thead(null,
                             React.DOM.tr(null,
-                                this.props.headers.map(function (title) {
-                                    return React.DOM.th(null, title);
+                                this.props.headers.map(function (title, idx) {
+                                    return React.DOM.th({key: idx}, title);
                                 })
                             )
                         )
