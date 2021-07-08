@@ -74,7 +74,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Primeiros dados
     - [x] Laço para cabeçalho da tabela
     - [x] Depurando o aviso do controle
-    - [ ] Adicionando o conteúdo de `<td>`
+    - [x] Adicionando o conteúdo de `<td>`
     - [ ] Como podemos melhorar o componente?
     - [ ] Ordenação
     - [ ] Como podemos melhorar o componehte?
