@@ -80,9 +80,9 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Como podemos melhorar o componente?
     - [x] Pistas sobre ordenação UI
     - [x] Editando dados
-    - [ ] Célula em que é possível editar
-    - [ ] Célula com campo de entrada
-    - [ ] Salvando
+    - [x] Célula em que é possível editar
+    - [x] Célula com campo de entrada
+    - [x] Salvando
     - [ ] Conclusão e diferenças com o DOM virtual
     - [ ] Pesquisa
     - [ ] Estado e UI
