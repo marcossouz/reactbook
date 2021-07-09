@@ -84,7 +84,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Célula com campo de entrada
     - [x] Salvando
     - [x] Conclusão e diferenças com o DOM virtual
-    - [ ] Pesquisa
+    - [x] Pesquisa
     - [ ] Estado e UI
     - [ ] Filtrando o conteúdo
     - [ ] Como podemos melhorar a pesquisa?
