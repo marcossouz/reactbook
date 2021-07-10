@@ -70,7 +70,7 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Ganho de desempenho: evitando atualização de componentes
     - [x] PureRenderMixin
 
-- [ ] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
+- [x] <span id="cap3">Capítulo 3</span> - Excel: um componente de tabela elegante
     - [x] Primeiros dados
     - [x] Laço para cabeçalho da tabela
     - [x] Depurando o aviso do controle
@@ -85,13 +85,13 @@ Este livro tem como foco conhecer a React do ponto de vista do desenvolvimento w
     - [x] Salvando
     - [x] Conclusão e diferenças com o DOM virtual
     - [x] Pesquisa
-    - [ ] Estado e UI
-    - [ ] Filtrando o conteúdo
-    - [ ] Como podemos melhorar a pesquisa?
-    - [ ] Reprodução instantânea
-    - [ ] Como podemos melhorar a reprodução?
-    - [ ] Uma implementação alternativa?
-    - [ ] Download dos dados da tabela
+    - [x] Estado e UI
+    - [x] Filtrando o conteúdo
+    - [x] Como podemos melhorar a pesquisa?
+    - [x] Reprodução instantânea
+    - [x] Como podemos melhorar a reprodução?
+    - [x] Uma implementação alternativa?
+    - [x] Download dos dados da tabela
 
 - [ ] <span id="cap4">Capítulo 4</span> - JSX
     - [ ] Hello JSX
