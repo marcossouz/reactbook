@@ -28,7 +28,6 @@
             ["She: A History of Adventure", "H. Rider Haggard", "English", "1887", "100 million"],
         ];
 
-
         var Excel = React.createClass({
             propTypes: {
                 headers: React.PropTypes.arrayOf(
@@ -49,6 +48,13 @@
                     search: false,
                 }
             },
+            _log: [],
+            _logSetState: function (newState) {
+                this._log.push(JSON.parse(JSON.stringify(
+                    this._log.length === 0 ? this.state : newState
+                )));
+                this.setState(newState);
+            },
             _sort: function (e) {
                 var column = e.target.cellIndex;
                 var data = this.state.data.slice();
@@ -58,14 +64,14 @@
                         ? (a[column] < b[column] ? 1 : -1)
                         : (a[column] > b[column] ? 1 : -1);
                 });
-                this.setState({
+                this._logSetState({
                     data: data,
                     sortby: column,
                     descending: descending,
                 });
             },
             _showEditor: function (e) {
-                this.setState({
+                this._logSetState({
                     edit: {
                         row: parseInt(e.target.dataset.row, 10),
                         cell: e.target.cellIndex,
@@ -77,45 +83,73 @@
                 var input = e.target.firstChild;
                 var data = this.state.data.slice();
                 data[this.state.edit.row][this.state.edit.cell] = input.value;
-                this.setState({
+                this._logSetState({
                     edit: null,
                     data: data,
                 })
             },
             _preSearchData: null,
-            _toogleSearch: function() {
-                if(this.state.search) {
-                    this.setState({
+            _toogleSearch: function () {
+                if (this.state.search) {
+                    this._logSetState({
                         data: this._preSearchData,
                         search: false,
                     });
                 } else {
                     this._preSearchData = this.state.data;
-                    this.setState({
+                    this._logSetState({
                         search: true,
                     })
                 }
             },
-            _search: function(e) {
+            _search: function (e) {
                 var needle = e.target.value.toLowerCase();
-                if(!needle) {
-                    this.setState({data: this._preSearchData});
+                if (!needle) {
+                    this._logSetState({ data: this._preSearchData });
                     return;
                 }
                 var idx = e.target.dataset.idx;
-                var searchData = this._preSearchData.filter(function(row) {
+                var searchData = this._preSearchData.filter(function (row) {
                     return row[idx].toString().toLowerCase().indexOf(needle) > -1;
                 });
-                this.setState({data: searchData});
+                this._logSetState({ data: searchData });
+            },
+            _download: function (format, ev) {
+                var contents = format === 'json'
+                    ? JSON.stringify(this.state.data)
+                    : this.state.data.reduce(function (result, row) {
+                        return result
+                            + row.reduce(function (rowresult, cell, idx) {
+                                return rowresult
+                                    + '"'
+                                    + cell.replace(/"/g, '""')
+                                    + '"'
+                                    + (idx < row.length - 1 ? ',' : '')
+                            }, '')
+                            + "\n";
+                    }, '');
+                var URL = window.URL || window.webkitURL;
+                var blob = new Blob([contents], {type: 'text/' + format});
+                ev.target.href = URL.createObjectURL(blob);
+                ev.target.downlaod = 'data.' + format;
             },
             _renderToolbar: function () {
-                return React.DOM.button(
-                    {
-                        onClick: this._toogleSearch,
-                        className: 'toolbar',
-                    },
-                    'search'
-                )
+                return React.DOM.div({ className: 'toolbar' },
+                    React.DOM.button(
+                        {
+                            onClick: this._toogleSearch,
+                            className: 'toolbar',
+                        },
+                        'search'),
+                    React.DOM.a({
+                        onClick: this._download.bind(this, 'json'),
+                        href: 'data.json'
+                    }, 'Export JSON'),
+                    React.DOM.a({
+                        onClick: this._download.bind(this, 'csv'),
+                        href: 'data.csv'
+                    }, 'Export CSV')
+                );
             },
             _renderSearch: function () {
                 if (!this.state.search) {
@@ -174,7 +208,27 @@
                     )
                 )
             },
-
+            _replay: function () {
+                if (this._log.length === 0) {
+                    console.warn('No state to replay yet');
+                    return;
+                }
+                var idx = -1;
+                var interval = setInterval(function () {
+                    idx++;
+                    if (idx === this._log.length - 1) {
+                        clearInterval(interval);
+                    }
+                    this.setState(this._log[idx]);
+                }.bind(this), 1000);
+            },
+            componentDidMount: function () {
+                document.onkeydown = function (e) {
+                    if (e.ctrlKey && e.shiftKey && e.keyCode === 82) {
+                        this._replay();
+                    }
+                }.bind(this);
+            },
             render: function () {
                 return (
                     React.DOM.div(null,
